@@ -1,0 +1,19 @@
+{
+	"manifest_version": 3,
+	"name": "EVM2AD",
+	"description": "Web sayfalarındaki EVM adreslerini bu bağlamda veya başka bağlamda isme çevirir",
+	"version": "2023.1923",
+	"icons": {
+		"16": "icons/icon_16.png",
+		"48": "icons/icon_48.png",
+		"128": "icons/icon_128.png",
+		"256": "icons/icon_256.png"
+	},
+  "permissions": ["activeTab"],
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["bundle.js"]
+		}
+	]
+}
